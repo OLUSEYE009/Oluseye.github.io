@@ -30,7 +30,7 @@
         }
 
         /* Loading Screen */
-        .loading-screen {
+   /*     .loading-screen {
             position: fixed;
             top: 0;
             left: 0;
@@ -111,7 +111,7 @@
             0% { opacity: 0; transform: scale(0.5); }
             100% { opacity: 1; transform: scale(1); }
         }
-
+*/
         /* Header */
         header {
             position: fixed;
@@ -869,7 +869,7 @@
 </head>
 <body>
     <!-- Loading Screen -->
-    <div class="loading-screen">
+   <!-- <div class="loading-screen">
         <div class="rocket-container">
             <div class="rocket"></div>
             <div class="flame"></div>
@@ -877,7 +877,7 @@
         </div>
         <h2 style="color: var(--primary);">Launching Portfolio...</h2>
     </div>
-
+-->
     <!-- Header -->
     <header>
         <a href="#" class="logo">OLUSEYE</a>
@@ -1092,7 +1092,7 @@
 
     <script>
         // Loading Screen
-        window.addEventListener('load', function() {
+     /*   window.addEventListener('load', function() {
             setTimeout(function() {
                 document.querySelector('.loading-screen').style.opacity = '0';
                 setTimeout(function() {
@@ -1101,7 +1101,7 @@
             }, 3000);
         });
 
-
+*/
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
