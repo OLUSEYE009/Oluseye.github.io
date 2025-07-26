@@ -724,6 +724,10 @@
             color: #ccc;
         }
 
+        .contact-card p a {
+            font-size: 16px;
+            color: #ccc;
+        }
         /* Footer */
         footer {
             padding: 20px;
@@ -741,7 +745,19 @@
         footer a:hover {
             text-decoration: underline;
         }
-
+        footer .download-btn {
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: var(--primary);
+            color: var(--dark);
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            margin-left: 20px;
+            display: none;
+        }
         /* Animations */
         @keyframes rotate {
             0% { transform: rotate(0deg); }
@@ -831,6 +847,19 @@
             .input-field {
                 width: 100%;
             }
+              footer .download-btn {
+                align-items: center;
+                gap: 8px;
+                padding: 8px 16px;
+                background: var(--primary);
+                color: var(--dark);
+                border-radius: 8px;
+                font-weight: 600;
+                text-decoration: none;
+                transition: var(--transition);
+                margin-left: 20px;
+                display: block;
+            }
         }
 
         @media (max-width: 480px) {
@@ -865,6 +894,7 @@
                 font-size: 36px;
             }
         }
+        
     </style>
 </head>
 <body>
@@ -1072,7 +1102,7 @@
             <div class="contact-card floating">
                 <i class="fas fa-phone"></i>
                 <h4>Phone</h4>
-                <p>+234 901 401 4807</p>
+                <p><a href="tel:+2349014014807">+234 901 401 4807</a></p>
             </div>
             <div class="contact-card floating">
                 <i class="fas fa-map-marker-alt"></i>
@@ -1088,6 +1118,9 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Seye Oyewole. All Rights Reserved.</p>
+         <a href="#" id="downloadResume" class="download-btn">
+            <i class="fas fa-download"></i> Resume
+        </a>
     </footer>
 
     <script>
