@@ -11,7 +11,6 @@
   <meta name="author" content="Oluseye Oyewole Japheth" />
   <link rel="canonical" href="https://Oluseye009.github.io/Oluseye.github.io" />
 
-  <!-- Open Graph (Facebook & WhatsApp Preview) -->
   <meta property="og:title" content="Oluseye Oyewole Japheth | Web Developer & Photographer" />
   <meta property="og:description" content="Explore the creative works of a young developer and photographer — turning ideas into visuals and code." />
   <meta property="og:image" content="https://Oluseye009.github.io/Oluseye.github.io" />
@@ -19,13 +18,11 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Seye Oyewole Portfolio" />
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Oluseye Oyewole Japheth | Web Developer & Photographer" />
   <meta name="twitter:description" content="Discover the creative world of Seye — a developer and photographer bringing stories to life through design and code." />
   <meta name="twitter:image" content="https://Oluseye009.github.io/Oluseye.github.io" />
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/logo.png" />
 
   <!-- Font Awesome -->
@@ -200,7 +197,6 @@
             width: 100%;
         }
 
-        /* Add this to your CSS */
 .download-btn {
     display: inline-flex;
     align-items: center;
@@ -933,7 +929,6 @@
         <h2 style="color: var(--primary);">Launching Portfolio...</h2>
     </div>
 -->
-    <!-- Header -->
     <header>
         <a href="#" class="logo">OLUSEYE</a>
         
@@ -953,7 +948,6 @@
         </a>
     </header>
 
-    <!-- Hero Section -->
     <section class="home" id="home">
         <div class="hero">
             <div class="hero-content">
@@ -978,7 +972,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section class="about" id="about">
         <h2 class="heading">About <span>Me</span></h2>
         <div class="about-content">
@@ -995,7 +988,6 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
         <h2 class="heading">My <span>Projects</span></h2>
         <div class="portfolio-content">
@@ -1051,7 +1043,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
         <div class="skills-content">
@@ -1088,7 +1079,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
         <form action="https://app.proforms.top/f/pr75625e7" method="POST">
@@ -1196,8 +1186,6 @@
                 });
             });
         });
-
-        // Active section highlighting
         window.addEventListener('scroll', function() {
             const sections = document.querySelectorAll('section');
             const scrollPosition = window.scrollY;
@@ -1214,16 +1202,11 @@
                 }
             });
         });
-
-        // Floating animation for elements
         const floatingElements = document.querySelectorAll('.floating');
         
         floatingElements.forEach((element, index) => {
-            // Add delay to create a wave effect
             element.style.animationDelay = `${index * 0.2}s`;
         });
-
-        // Form submission
         const form = document.querySelector('form');
         
         form.addEventListener('submit', function(e) {
@@ -1260,22 +1243,15 @@
             });
         });
 
-        // Add this to your existing JavaScript
 document.getElementById('downloadResume').addEventListener('click', function(e) {
     e.preventDefault();
-    
-    // Replace this with the actual path to your resume file
     const resumeUrl = 'OYEWOLE_OLUSEYE_RESUME.pdf';
-    
-    // Create a temporary anchor element to trigger the download
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'OYEWOLE_OLUSEYE_RESUME.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    
-    // Optional: Add a confirmation message
     alert('Downloading resume...');
 });
     </script>
